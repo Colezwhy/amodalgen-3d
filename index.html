@@ -67,34 +67,23 @@
                     <!-- <h5 class="text-center" style="text-align: center">Authors anonymized</h5> -->
                     <div class="text-center">
                             <span class="author-block" style="font-size: 35px;  margin-right: 35px;">
-                            <a href="https://colezwhy.github.io/">Junwei Zhou</a><sup>1</sup></span>
+                            <a href="https://colezwhy.github.io/">Junwei Zhou</a></span>
                             <span class="author-block" style="font-size: 35px;  margin-right: 35px;">
-                            <a href="https://sunshineatnoon.github.io/"> Xueting Li </a><sup>2</sup></span>
-                          <span class="author-block" style="font-size: 35px; margin-right: 35px;">
-                          <a href="https://luqi.info/"> Lu Qi </a><sup>3,4</sup></span>
-                          <span class="author-block" style="font-size: 35px; ">
-                            <a href="https://faculty.ucmerced.edu/mhyang/"> Ming-Hsuan Yang </a><sup>5</sup></span>
+                            <a href="https://yuwingtai.github.io/"> Yu-Wing Tai </a></span>
                     </div>
             
                       <div class="text-center">
-                        <span class="author-block" style="font-size: 28px; margin-right: 30px;"><sup>1</sup>Huazhong University of Science and Technology</span>
-                        <span class="author-block" style="font-size: 28px; margin-right: 30px;"><sup>2</sup>NVIDIA</span>
-                                                <!-- <p></p> -->
+                        <span class="author-block" style="font-size: 28px; margin-right: 30px;"><sup>1</sup>Dartmouth College</span>
                       </div>
-                      <div class="text-center">
-                        <span class="author-block" style="font-size: 28px; margin-right: 30px;"><sup>3</sup>Wuhan University</span>
-                        <span class="author-block" style="font-size: 28px; margin-right: 30px;"><sup>4</sup>Insta360 Research</span>
-                        <span class="author-block" style="font-size: 28px; margin-right: 30px;"><sup>5</sup>UC Merced</span>
-                    </div>
                 </div>
             </div>
             <div class="buttons" style="margin-top: 8px; margin-bottom: 8px;">
-                <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2506.19798" style="font-size: 30px; align-items: center;">
+                <a class="btn btn-light" role="button" href="https://arxiv.org/abs/" style="font-size: 30px; align-items: center;">
                     <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
                     </svg> Paper
                 </a>
-                <a class="btn btn-light" role="button" href="https://github.com/Colezwhy/CoCo4D-Gen" style="font-size: 30px; align-items: center;">
+                <a class="btn btn-light" role="button" href="https://github.com/Colezwhy/AmodalGen3D" style="font-size: 30px; align-items: center;">
                     <svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
                                 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 
@@ -109,20 +98,20 @@
     <div class="container" style="max-width: 800px;">
         <div class="row captioned_videos">
         <div class="col-6">
-            <div class="video-compare-container" style="width: 100%">
+            <!-- <div class="video-compare-container" style="width: 100%">
                 <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
                     <source data-src="videos/cherry.mp4" type="video/mp4"></source>
                 </video>
                 <h4 class="caption">An anime girl walking in a cherry blossom scene.</h4>
-            </div>
+            </div> -->
         </div>
         <div class="col-6">
-            <div class="video-compare-container" style="width: 100%">
+            <!-- <div class="video-compare-container" style="width: 100%">
                 <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
                     <source data-src="videos/firework.mp4" type="video/mp4"></source>
                 </video>
                 <h4 class="caption">In the background, fireworks are bursting. Infront of it, there is a teddy bear dancing slowly within a small area.’.</h4>
-            </div>
+            </div> -->
         </div>
         </div>
     </div>
@@ -134,16 +123,8 @@
             <div class="col-md-12">
                 <h2>Abstract</h2>
                 <p>
-                    We propose a framework (dubbed as CoCo4D) for generating detailed
-                    dynamic 4D scenes from text prompts, with the option to include images. Our
-                    method leverages the crucial observation that articulated motion typically charac-
-                    terizes foreground objects, whereas background alterations are less pronounced.
-                    Consequently, CoCo4D divides 4D scene synthesis into two responsibilities: model-
-                    ing the dynamic foreground and creating the evolving background, both directed by
-                    a reference motion sequence.
-                    Extensive experiments show that CoCo4D achieves
-                    comparable or superior performance in 4D scene generation compared to existing
-                    methods, demonstrating its effectiveness and efficiency.
+                We introduce AmodalGen3D, a generative framework for amodal 3D object reconstruction that infers complete, occlusion-free geometry and appearance from arbitrary sparse inputs. The model integrates 2D amodal completion priors with multi-view stereo geometry conditioning, supported by a View-Wise Cross Attention mechanism for sparse-view feature fusion and a Stereo-Conditioned Cross Attention module for unobserved structure inference.
+                By jointly modeling visible and hidden regions, AmodalGen3D faithfully reconstructs 3D objects that are consistent with sparse-view constraints while plausibly hallucinating unseen parts. Experiments on both synthetic and real-world datasets demonstrate that AmodalGen3D achieves superior fidelity and completeness under occlusion-heavy sparse-view settings, addressing a pressing need for object-level 3D scene reconstruction in robotics, AR/VR, and embodied AI applications.
                 </p>
             </div>
         </div>
@@ -151,7 +132,7 @@
     <div class="container" style="max-width: 800px;">
         <div class="row captioned_videos">
             <div class="col-md-12">
-                <img src="sources/teaser.png" alt="architecture" style="width: 100%">
+                <!-- <img src="sources/teaser.png" alt="architecture" style="width: 100%"> -->
                 
             </div>
         </div>
@@ -163,11 +144,11 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Proposed Framework & Method </h2>
-                <p> Overview of our CoCo4D. We first generate the reference video (initial motion) for both foreground and background, and disentangle them for separate generation, i.e., Dynamic Foreground Generation (Sec. 3.1 in paper) and Dynamic Background Synthesis (Sec. 3.2 in paper). Finally, we precisely compose these two components (Sec. 3.3 in paper) to form our comprehensive and complex target 4D scene.</p>
+                <p> Overview of AmodalGen3D. Given sparse images, visibility masks, and occlusion masks indicating the occluded object, AmodalGen3D first generates a sparse structure (stage 1) by aggregating multi-view information in Sec. 3.1 and infers the complete geometric structure from the partial stereo point cloud in Sec. 3.2. Once the sparse structure is obtained, we employ a pretrained amodal SLAT Transformer, controlling texture generation with visibility masks and occlusion masks, and then generate the structured latent. This structured latent is decoded into an occlusion-free 3D object with high-quality geometry and appearance.</p>
                 <div class="container" style="max-width: 800px;">
                     <div class="row">
                         <div class="col-md-12">
-                        <img src="sources/pipeline.png" alt="architecture" style="width: 100%">
+                        <img src="sources/pipeline_overall.png" alt="architecture" style="width: 100%">
                         </div>
                     </div>
                 </div>
@@ -179,11 +160,11 @@
     <div class="container" style="max-width: 800px;">
         <div class="row">
             <div class="col-md-12">
-                <p> We give a detailed explaination of our progressive outpaint method, which includes an inpaint-project-optimize loop for dynamic background scene expansion.</p>
+                <p> A detailed illustration of our proposed View-Wise Cross Attention and Stereo-Conditioned Cross Attention.</p>
                 <div class="container" style="max-width: 800px;">
                     <div class="row">
                         <div class="col-md-12">
-                        <img src="sources/progressive.png" alt="architecture" style="width: 100%">
+                        <img src="sources/pipeline_proposed.png" alt="architecture" style="width: 100%">
                         </div>
                     </div>
                 </div>
@@ -204,7 +185,7 @@
                 <div class="row captioned_videos">
                     <div class="col-md-12">
                         <div style="position:relative;padding-top:56.25%;">
-                            <iframe src="https://www.youtube.com/embed/RMVk1qS8pqM" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                            <!-- <iframe src="https://www.youtube.com/embed/RMVk1qS8pqM" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -212,7 +193,7 @@
         </div>
     </div>
 
-    <hr class="divider" />
+    <!-- <hr class="divider" />
     <div class="container" style="max-width: 800px;">
         <div class="row">
             <div class="col-sm-12">
@@ -304,111 +285,6 @@
             </div>
             </div>
         </div>
-    </div>
-
-    <!-- <hr class="divider" />
-    <div class="container" style="max-width: 800px;">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>More generated compositional samples</h2>
-                <p>More compositional 3D scenes generated by our Layout-Your-3D.</p>
-            </div>
-        </div>
-        <div class="row captioned_videos">
-            <div class="col-6">
-                <div class="video-compare-container" style="width: 100%">
-                    <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                        <source data-src="videos/bear_hd.mp4" type="video/mp4"></source>
-                    </video>
-                    <h4 class="caption">A teddy bear reading a book wearing blue sunglasses.</h4>
-                </div>
-                
-            </div>
-            <div class="col-6">
-                <div class="video-compare-container" style="width: 100%">
-                    <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                        <source data-src="videos/kitten.mp4" type="video/mp4"></source>
-                    </video>
-                    <h4 class="caption">A kitten lying next to a flower.</h4>
-                </div>
-                
-            </div>
-
-            <br><br>
-
-            <div class="col-6">
-                <div class="video-compare-container" style="width: 100%">
-                    <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                        <source data-src="videos/hamburger.mp4" type="video/mp4"></source>
-                    </video>
-                    <h4 class="caption">A blue bird standing on top of a hamburger.</h4>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <div class="video-compare-container" style="width: 100%">
-                    <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                        <source data-src="videos/pyramid.mp4" type="video/mp4"></source>
-                    </video>
-                    <h4 class="caption">A tray on top of a toy pyramid, on the tray is a red bottle, a toy panda and an apple</h4>
-                </div>
-            </div>
-
-            <br><br>
-
-        </div>
-    </div>
-    
-
-    <hr class="divider" />
-    <div class="container" style="max-width: 800px;">
-        <div class="row">
-            <div class="col-md-12">
-                <h2> More visualization results. </h2>
-                <h3> Single 3D object generation. </h3>
-                <div class="container" style="max-width: 800px;">
-                    <div class="row">
-                        <div class="col-md-12">
-                        <img src="sources/appendix_instancegen.png" alt="architecture" style="width: 100%">
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" style="max-width: 800px;">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Custom 3D scene generation.</h3>
-            </div>
-        </div>
-        <div class="row captioned_videos">
-            <div class="col-6">
-                <div class="video-compare-container" style="width: 100%">
-                <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                    <source data-src="videos/pigeon.mp4" type="video/mp4"></source>
-                </video>
-                <h4 class="caption">A pigeon having a bagel and a beer. (original text prompt)</h4>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <div class="video-compare-container" style="width: 100%">
-                <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                    <source data-src="videos/custom.mp4" type="video/mp4"></source>
-                </video>
-                <h4 class="caption">
-                    <span style="color: blue;">[A blue origami pigeon]
-                    <span style="color: black;"> having 
-                    <span style="color: green;">[a bagel made out of grass]
-                    <span style="color: black;"> and 
-                    <span style="color: red;">[a beer on fire].
-                </h4>
-                </div>
-            </div>
-        </div>
     </div> -->
 
     <hr class="divider" />
@@ -421,10 +297,10 @@
                         title={AmodalGen3D: Generative Amodal 3D Object Reconstruction from Sparse Unposed Views}, 
                         author={Junwei Zhou and Yu-Wing Tai},
                         year={2025},
-                        eprint={2506.19798},
+                        eprint={},
                         archivePrefix={arXiv},
                         primaryClass={cs.CV},
-                        url={https://arxiv.org/abs/2506.19798}, 
+                        url={https://arxiv.org/abs/}, 
                   }
                   </code></pre>
             </div>
